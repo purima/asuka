@@ -36,10 +36,14 @@ frame[0][1] = 'Y'
 ###
 
 # draw graph
+
 for x in 0..79 do
-###
-### 分担2
-###
+
+  a= x/80.0
+  y1=24-f(a)*25
+  if y1 >= 0 then
+    frame[y1][x] = '*'
+  end
 end
 
 # printout
