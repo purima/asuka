@@ -31,24 +31,20 @@ frame[23][78] = 'X'
 frame[0][1] = 'Y'
 
 # draw func
-###
-### 分担3
-###
 frame[0][20] = 'y'
 frame[0][21] = '='
 for i in 0..$func.size do
 frame[0][i+22] = $func[i]
-end
+
 # draw graph
+for x in 0..79 do
 
-
-
-
-
-
-
-
-
+  a= x/80.0
+  y1=24-f(a)*25
+  if y1 >= 0 then
+    frame[y1][x] = '*'
+  end
+end
 
 # printout
 frame.each do |line|
