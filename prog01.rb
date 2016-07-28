@@ -34,13 +34,21 @@ frame[0][1] = 'Y'
 ###
 ### 分担3
 ###
-
-# draw graph
-for x in 0..79 do
-###
-### 分担2
-###
+frame[0][20] = 'y'
+frame[0][21] = '='
+for i in 0..$func.size do
+frame[0][i+22] = $func[i]
 end
+# draw graph
+
+
+
+
+
+
+
+
+
 
 # printout
 frame.each do |line|
